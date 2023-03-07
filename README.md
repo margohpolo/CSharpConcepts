@@ -61,7 +61,7 @@ Write a check to determine if an input string is a Palindrome.
         <li>"level"</li>
         <li>"radar"</li>
         <li>"taco cat"</li>
-        <li>"Mr. Owl ate my metal worm"</li>
+        <li>"Mr Owl ate my metal worm"</li>
     </ul>
 </Details>
 
