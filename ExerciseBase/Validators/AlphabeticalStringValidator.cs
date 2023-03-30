@@ -6,30 +6,16 @@ namespace CSharpConcepts.ExerciseBase.Validators
 {
     public static class AlphabeticalStringValidator
     {
-        //public static bool IsOnlyAlphabetical()
-        //{
-
-
-        //    return false;
-        //}
+        
 
         private static bool IsNeitherLetterNorSpace(char c)
         {
-            return !Char.IsLetter(c) && !Char.IsSeparator(c);
+            return true; //TODO
         }
 
         public static bool IsOnlyAlphabetical(this string inputString)
         {
-            if (inputString != null)
-            {
-                for (int i = 0; i < inputString.Length; i++)
-                {
-                    if (IsNeitherLetterNorSpace(inputString[i]))
-                    {
-                        return false;
-                    }
-                }
-            }
+            //TODO
 
             return true;
         }
@@ -37,15 +23,9 @@ namespace CSharpConcepts.ExerciseBase.Validators
         #region Default
         public static bool IsValidPalindrome(this string inputString)
         {
-            string initialInput = StringFilter(inputString);
-            string reversedInput = string.Empty;
+            //TODO
 
-            for (int i = initialInput.Length - 1; i >= 0; i--)
-            {
-                reversedInput += initialInput[i];
-            }
-
-            return reversedInput == initialInput;
+            return true;
         }
 
         #endregion
@@ -54,15 +34,9 @@ namespace CSharpConcepts.ExerciseBase.Validators
         #region out keyword
         public static void IsValidPalindrome_Out(this string inputString, out bool output)
         {
-            string initialInput = StringFilter(inputString);
-            string reversedInput = string.Empty;
+            //TODO
 
-            for (int i = initialInput.Length - 1; i >= 0; i--)
-            {
-                reversedInput += initialInput[i];
-            }
-
-            output = reversedInput == initialInput;
+            output = true;
         }
 
         #endregion
@@ -71,26 +45,18 @@ namespace CSharpConcepts.ExerciseBase.Validators
 
         public static void IsValidPalindrome_Ref(this string inputString, ref bool output)
         {
-            string initialInput = StringFilter(inputString);
-            string reversedInput = string.Empty;
+            //TODO
 
-            for (int i = initialInput.Length - 1; i >= 0; i--)
-            {
-                reversedInput += initialInput[i];
-            }
-
-            output = reversedInput == initialInput;
+            output = true;
         }
 
         #endregion
 
         private static string StringFilter(string inputString)
         {
+            //TODO
+
             string outputString = string.Empty;
-            foreach (char c in inputString.ToLower())
-            {
-                if (Char.IsLetter(c)) outputString += c;
-            }
 
             return outputString;
         }

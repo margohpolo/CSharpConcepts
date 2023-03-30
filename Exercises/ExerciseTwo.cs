@@ -61,10 +61,7 @@ namespace CSharpConcepts.Exercises
         {
             var output = new List<int>();
 
-            foreach (string str in inputString.Split(','))
-            {
-                output.Add(Convert.ToInt16(str));
-            }
+            //TODO
 
             return output.ToArray();
         }
@@ -72,32 +69,8 @@ namespace CSharpConcepts.Exercises
         private static string PrintCumulativeArray(int[] inputArray)
         {
             string output = "";
-            List<int> tempList = new List<int>();
-
-            for (int i = 0; i < inputArray.Length; i++)
-            {
-                if (i.Equals(0)) //double check the logic
-                {
-                    output += inputArray[0].ToString();
-                }
-                else
-                {
-                    int x = 0;
-
-                    foreach (int item in tempList)
-                    {
-                        x += item;
-                    }
-
-                    output += (x + inputArray[i]).ToString();
-                }
-
-                if (!i.Equals(inputArray.Length - 1))
-                {
-                    output += ',';
-                    tempList.Add(inputArray[i]);
-                }
-            }
+            
+            //TODO
 
             return output;
         }

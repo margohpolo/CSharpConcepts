@@ -49,33 +49,7 @@ namespace CSharpConcepts.Exercises
         {
             Console.WriteLine($"You have entered: {input} \n");
 
-            #region Default
-
-            //string result = input.IsValidPalindrome() ? string.Empty : "not ";
-
-            #endregion
-
-
-            #region out keyword
-
-            //bool isValidPalindrome = false;
-
-            //input.IsValidPalindrome_Out(out isValidPalindrome);
-
-            //string result = isValidPalindrome ? string.Empty : "not ";
-            #endregion
-
-
-            #region ref keyword
-
-            bool isValidPalindrome = false;
-
-            input.IsValidPalindrome_Ref(ref isValidPalindrome); //assigning outside that's why it works...
-
-            string result = isValidPalindrome ? string.Empty : "not ";
-            #endregion
-
-            //Next Step: Difference between Out & Ref
+            string result = input.IsValidPalindrome() ? string.Empty : "not ";
 
             Console.WriteLine($"{input} is " + result + "a valid Palindrome.") ;
         }
