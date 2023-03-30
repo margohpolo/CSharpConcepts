@@ -9,7 +9,7 @@ namespace CSharpConcepts.ExerciseBase.Validators
         //Rule 1 Input cannot be null
         public static bool InputCannotBeNull(string? input)
         {
-            return string.IsNullOrWhiteSpace(input);
+            return !string.IsNullOrWhiteSpace(input);
         }
 
         //Rule 2: Array can only contain digits and commas
